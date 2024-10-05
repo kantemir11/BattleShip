@@ -5,11 +5,16 @@ Start the game
 https://htmlpreview.github.io/?https://github.com/kantemir11/BattleShip/blob/main/BattleShip/index.html
 
 
-Rules The ships are placed as follows:
+Rules 
+
+The ships are placed as follows:
 
 1 ship — a row of 4 cells ("four-deck ships") 
+
 2 ships — a row of 3 cells ("three-deck ships") 
+
 3 ships — a row of 2 cells ("two-deck ships") 
+
 4 ships — 1 cell ("single-deck ships") 
 
 When placing the ships, they must not touch each other by sides or corners.
