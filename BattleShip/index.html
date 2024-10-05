@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Battleship</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="gameArea">
+            <div class="footer htmlpreview-fallback">
+                <button class="btn" onclick="runGame(true)">START</button>
+            </div>
+        </div>
+        <!-- Name Input Modal -->
+<div id="nameModal" class="modal">
+    <div class="modal-content">
+      <h2>Start New Game</h2>
+      <label for="userName">Your Name</label>
+      <input type="text" id="userName" placeholder="Enter your name">
+      <label for="opponentName">Opponent Name</label>
+      <input type="text" id="opponentName" placeholder="Enter opponent name">
+      <div class="modal-actions">
+        <button class="btn cancel" onclick="cancelNameInput()">Cancel</button>
+        <button class="btn" onclick="submitNameInput()">OK</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Alert Modal -->
+  <div id="alertModal" class="modal">
+    <div class="modal-content">
+      <h2>Error</h2>
+      <p>Incorrect input. Please try again.</p>
+      <div class="modal-actions">
+        <button class="btn" onclick="closeAlertModal()">OK</button>
+      </div>
+    </div>
+  </div>
+  
+
+        <script src="index.js"></script>
+        <script>
+        function runGame(startImmediatly) {
+             var game = new SeeBattle('gameArea');
+             game.run();
+
+             // fallback для htmlpreview
+             if (startImmediatly) {
+                game.startNewGame();
+             }
+        }
+        </script>
+    </body>
+</html>
