@@ -1,6 +1,8 @@
 Open index.html
 
 Start the game
+https://htmlpreview.github.io/?https://github.com/kantemir11/BattleShip/blob/main/BattleShip/index.html
+
 
 Rules The ships are placed as follows:
 
